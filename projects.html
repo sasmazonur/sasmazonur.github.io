@@ -9,6 +9,7 @@
   <meta name="keywords" content="Software Enginee, Software, Engineer, Intern, C++, Object Orientad">
   <meta name="author" content="Onur Sasmaz">
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -35,6 +36,7 @@
           <ul class="side-nav">
             <li class="is-active" >
             <span>FollowBot</span></li>
+            <li><span>Parallel Programming</span></li>
             <li><span>Collaborative Robots</span></li>
             <li><span>Bar Finder</span></li>
             <li><span>Westagram</span></li>
@@ -43,35 +45,80 @@
         </nav>
         <ul class="l-main-content main-content">
           <li class="l-section section section--is-active">
-                  <div class="about">
-                    <div class="about--banner">
+                  <div class="projects-ab">
+                    <div class="projects-ab--banner">
                       <h1>FollowBot</h1>
+                      <p>The FollowBot has been designed with the Intel RealSense Depth Camera D415 series that uses stereo vision to calculate the distance between robot and human. The human following method has the ability to differentiate a person and other objects. As well as follow a person in real-time using deep neural networks. The human following robot also has the ability to create 2D and 3D maps of its environment using simultaneous localization and mapping (SLAM). The 2D occupancy grid map is created from the laser scan data, and the mobile robot pose. And 3D map created by using the RGB-D Graph SLAM approach called Real-Time Appearance Based Mapping (RTAB-Map). </p>
+                      <p>The robot was implemented in Python, C++, C, C#, and has been tested in real-life testing scenarios.</p>
+                      <a href="https://github.com/sasmazonur/Human-Following-Robot"><img src="assets/img/github.png" class= "center-me" alt="GitHub" style="width:42px;height:42px;"></a>
+
                       <div class="iframe-container">
-                      <iframe width="880" height="630"
+                      <iframe width="704" height="504"
                       src="https://www.youtube.com/embed/cHKvVXOJTZ8?autoplay=1&mute=1">
                       </iframe>
+                      <!-- <button class="button button5"><a href='https://github.com/sasmazonur/Human-Following-Robot'>GitHub</a></button> -->
                     </div>
                   </div>
           </li>
-			<li class="l-section section">
-              <div class="about">
-                <div class="about--banner">
+      <li class="l-section section">
+            <div class="projects-ab">
+              <div class="projects-ab--banner">
+                <h1>Parallel Programming</h1>
+                <p>These applications designed to improve user interaction and simulation and computational performance.
+                  The goals of these projects are to improve tasks that require desktop parallelism, both on a CPU and a GPU.</p>
+
+                <p>During these projects I had the change to work with 16 NVidia Tesla V100 GPUs. That Each card has 5,120 CUDA Cores and 640 Tensor Cores.
+                  This gives each 16 V100 DGX server a total of 81,920 CUDA cores and 10,240 Tensor cores.</p>
+
+                <h3 align="left"> These projects include: </h3>
+                <ol>
+                  <li>Parallel computing: types, limitations</li>
+                  <li>Moore’s Law, Amdahl’s Law</li>
+                  <li>OpenMP</li>
+                  <li>Synchronization issues in parallel computing</li>
+                  <li>Cache issues in parallel computing</li>
+                  <li>SIMD</li>
+                  <li>GPU computing</li>
+                  <li>OpenCL</li>
+                  <li><strong>CUDA</strong></li>
+                </ol>
+
+                <h3 align="left">After completion of the course, I have the ability to: </h3>
+                <ul>
+                  <li>Explain the clockspeed limitations of computing using physics and Moore's Law</li>
+                  <li>Explain the limitations of parallel computing using Amdahl's Law</li>
+                  <li>Demonstrate "parallel thinking" in program design</li>
+                  <li>Demonstrate the ability to program parallel algorithms in multicore, SIMD, and GPU.</li>
+                  <li>Characterize what types of problems are best able to be parallelized</li>
+                  <li>Characterize how cache issues affect parallel performance</li>
+                  <li>Demonstrate the proper use of synchronization to avoid race conditions and deadlock</li>
+                  <li>Characterize the benefits of using a CPU versus using a GPU for parallel programming</li>
+                  <li>Characterize the benefits of using a GPU versus using a CPU for parallel programming</li>
+                </ul>
+                <a href="https://github.com/sasmazonur/Parallel-Computing"><img src="assets/img/github.png" class= "center-me" alt="Link GitHub" style="width:42px;height:42px;"></a>
+              </div>
+            </div>
+      </li>
+      <li class="l-section section">
+              <div class="projects-ab">
+                <div class="projects-ab--banner">
                   <h1>Collaborative Robots</h1>
                   <img src="assets/img/undercon.png" width="500" height="500">
                   </div>
               </div>
       </li>
       <li class="l-section section">
-            <div class="about">
-              <div class="about--banner">
+            <div class="projects-ab">
+              <div class="projects-ab--banner">
                 <h1>Bar Finder</h1>
                 <img src="assets/img/undercon.png" width="500" height="500">
               </div>
             </div>
       </li>
+
 			<li class="l-section section">
-            <div class="about">
-              <div class="about--banner">
+            <div class="projects-ab">
+              <div class="projects-ab--banner">
                 <h1>Westagram</h1>
                 <img src="assets/img/undercon.png" width="500" height="500" alt="Welcome">
               </div>
