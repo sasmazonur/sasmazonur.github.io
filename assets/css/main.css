@@ -1097,6 +1097,10 @@ body {
 	.work--lockup .slider {
 		width: auto
 	}
+	.work--lockup .slider--item-image {
+		width: 30px;
+		height: 30px
+	}
 	.work--lockup .slider--item-left,
 	.work--lockup .slider--item-right {
 		display: none
