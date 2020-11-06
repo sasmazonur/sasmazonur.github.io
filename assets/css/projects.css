@@ -292,8 +292,9 @@ body {
 	position: relative;
 	width: 100vw;
 	height: 100vh;
+	height: calc(var(--vh, 1vh) * 100);
 	box-shadow: 0 0 45px 5px rgba(0, 0, 0, 0.85);
-	overflow: scroll
+	overflow: auto
 }
 
 .l-wrapper {
@@ -350,6 +351,7 @@ body {
 
 .l-section {
 	position: absolute;
+	overflow-y: scroll;
 	width: 100%;
 	height: 100%
 }
