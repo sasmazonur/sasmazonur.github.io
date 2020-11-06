@@ -687,14 +687,9 @@ body {
 	color: #fff
 }
 
-
-
 .about {
 	position: relative;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
+	display: flow;
 	width: 900px;
 	max-width: 75%;
 	height: 100%;
@@ -707,12 +702,18 @@ body {
 	-webkit-justify-content: center;
 	-ms-flex-pack: center;
 	justify-content: center;
+	padding-top: 20px;
 	margin: 0 auto
 }
 
 @media (max-width: 1180px) {
 	.about {
 		max-width: 100%
+	}
+}
+@media (max-width: 600px) {
+	.about {
+		padding-top: 40px
 	}
 }
 
@@ -1036,19 +1037,4 @@ body {
   .multi-column li{
     font-size: 12px;
   }
-}
-
-
-.iframe-container {
-	text-align:center;
-	width:70%;
-	position:relative;
-	top: 10px;
-}
-
-@media (max-width: 700px) {
-	.iframe-container iframe {
-		width: auto;
-		height: auto;
-	}
 }
