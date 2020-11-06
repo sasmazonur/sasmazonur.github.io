@@ -870,6 +870,9 @@ body {
 	.intro--banner h1 {
 		font-size: 55px
 	}
+	.intro--banner h2 {
+		font-size: 18px
+	}
 	.intro--banner img {
 		width: 250px;
 		height: auto;
