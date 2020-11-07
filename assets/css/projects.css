@@ -1046,3 +1046,10 @@ body {
     font-size: 12px;
   }
 }
+
+.scrollme ol{
+	overflow-y: auto;
+}
+.scrollme2 ul{
+	overflow-y: auto;
+}
