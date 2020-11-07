@@ -668,6 +668,13 @@ body {
 	content: "05"
 }
 
+.side-nav li:nth-child(6)::before {
+	content: "06"
+}
+.side-nav li:nth-child(7)::before {
+	content: "07"
+}
+
 .side-nav li.is-active {
 	color: #0f33ff;
 	-webkit-transition: color .4s ease-in-out;
@@ -719,7 +726,7 @@ body {
 .about--banner {
 	position: relative;
 	height:100vh;
-	overflow: hidden;
+	/* overflow: hidden; */
 	-webkit-overflow-scrolling: touch;
 }
 
