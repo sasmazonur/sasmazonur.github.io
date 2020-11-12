@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Database Management Systems</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/templatemo-style.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.singlePageNav.min.js"></script>
+		<script src="js/typed.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/custom.js"></script>
+	</head>
+	<body id="top">
+		<!-- start preloader -->
+		<div class="preloader">
+			<div class="sk-spinner sk-spinner-wave">
+				<div class="sk-rect1"></div>
+				<div class="sk-rect2"></div>
+				<div class="sk-rect3"></div>
+				<div class="sk-rect4"></div>
+				<div class="sk-rect5"></div>
+			</div>
+		</div>
+		<!-- end preloader -->
+		<!-- start navigation -->
+		<nav class="navbar navbar-default templatemo-nav" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+					</button>
+					<a onclick="goBack()" class="navbar-brand">Home</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- Menu -->
+		
+		<!-- Main -->
+		<div id="main">
+			<!-- Post -->
+			<article class="post">
+				<header>
+					<div class="title" style="background-image:url(images/database-intro.png);">
+						<h1 style="text-align: center;"><span style="background-color: #ffffff; color: #000000;"><strong>Database Management Systems</strong></span></h1>
+					</div>
+					<div class="meta">
+						<time class="published" datetime="2020-9-20">January - March, 2020</time>
+						<a href="#" class="author"><span class="name">Onur Sasmaz</span><img src="images/avatar.jpg" alt="" /></a>
+					</div>
+				</header>
+				<h4><strong>Uses: </strong> SQL, Express, React.js, and Node.js</h4>
+				<h4><strong>Goal:</strong></h4>
+				<p>The goal of this project was to learn how to use the system to run queries fast, pick the right system, customize data management system. As well as, understand the challenges of managing, querying, and analyzing large volumes of various data sets and study the principles and algorithms used to address these challenges.</p>
+				<h4><strong>After this project I was able to implement these abstractions efficiently:</strong></h4>
+				<ul>
+					<li>Storage management and indexing
+						<ul>
+							<li>Access/ Retrieve records in a large file fast</li>
+						</ul>
+					</li>
+					<li>Query processing/optimization
+						<ul>
+							<li>Run complex queries over large data fast</li>
+						</ul>
+					</li>
+					<li>Transaction management
+						<ul>
+							<li>Not let users interfere with each other&rsquo;s work</li>
+							<li>Cope with failure and loss of data (e.g, power outage in the middle of a program)</li>
+						</ul>
+					</li>
+				</ul>
+				<h3>Project</h3>
+				<p>The project involves the development of a library catalog containing books, journals, periodicals, and other kinds of written works. Librarians and library members can view, add, edit, or delete publications. They can also view and add authors and publishers. The project focuses on building new data systems and developing novel data and query models by discussing classic and new research papers in the area of data management and analytics.</p>
+				<p>Data in the database is imported from third-party databases. Once retrieved, the team implemented programs to parse for relevant information (ISBNs, titles, published years, authors, and publishers) and insert it into the MariaDB, the SQL database powering this library catalog.</p><p>&nbsp;</p>
+				<h4><strong>Design</strong></h4>
+				<p>The library catalog application is built with the &ldquo;SERN&rdquo; stack (SQL, Express, React.js, and Node.js):</p>
+				<p><strong>SQL database</strong>: Provides data to the application <br /> <strong>Express</strong>: Framework for building a backend API to which the front end UI can request <br /> CRUD operations <br /> <strong>React.js</strong>: Framework for building an interactive UI <br /> <strong>Node.js</strong>: Framework for building the backend server </p>
+				<p>Aside from the main web stack technologies the project used the following to retrieve and insert huge amounts of data into the SQL database: <br /> <strong>Node.js:</strong>&nbsp;Makes HTTP requests to API endpoints, parses JSON responses for relevant data, and insert data into the DB <br /> <strong>Bash Script</strong>: Passes search queries to the Node.js scripts as command-line arguments. It loops through multiple queries (alphabet letters) and runs for an extended period of time.</p>
+				<h4>Processing and Importing the Data</h4>
+				<p>This step is one of the most important steps in the entire project because it can potentially mess up the insertion of the database. Extensive testing was done to correctly parse data and ensure it did not degrade the integrity of existing tables.</p>
+				<p>For JSON responses, used Node.js to treat them as native objects and cherry-pick properties the after.</p>
+				<p>For inserting the same data, testing was done to ensure the JavaScript properties were inserted into the correct attributes on a given table. Furthermore, this had to be implemented and tested for every API used, since the response from each was in a different format.</p>
+				<p>The following code snippet demonstrates how the data retrieval script picks out relevant data</p>
+				<img src="images/data-retrival.png" alt="data_retreive" style="max-width: 70%;">
+				<p>The next code snippet involves formulating a SQL insertion query from the above data and making a request to the MariaDB server:</p>
+				<p><img src="images/sql-insertion.png" alt="data_retreive_mariaDB" style="max-width: 70%;" /></p>
+				<h4>Database Schema</h4>
+				<p><strong>The database is comprised of the following tables:</strong></p>
+				<ul>
+					<li><strong>ex_book</strong>: contains the list of books and the following information about them:
+						<ul>
+							<li>ISBN: the ISBN of the book (ISBN13).</li>
+							<li>year_published: the year that the book was published. Saved as a SQL &lsquo;year&rsquo; data type instead of date, since the dates obtained for the data have inconsistent formats.</li>
+							<li>title: the title of the book.</li>
+							<li>authorID: a foreign key that links to the authorID in ex_author , used to replace the integer authorID key with the string value of the author&rsquo;s name.</li>
+							<li>publisherID: a foreign key that links to the publisherID in ex_publisher , used to replace the integer publisherID key with the string value of the publisher&rsquo;s name.&nbsp;</li>
+						</ul>
+					</li>
+					<li><strong>ex_author</strong>: contains the names of all authors that appear in the book table:
+						<ul>
+							<li>authorID: ID applied to the author name. Auto-increments with each new tuple.</li>
+							<li>name: the name of the author.</li>
+						</ul>
+					</li>
+					<li><strong>ex_publisher</strong>: contains the names of all publishers that appear in the book table:
+						<ul>
+							<li>publisherID: ID applied to the publisher name. Auto-increments with each new tuple.</li>
+							<li>name: the name of the publishing company.</li>
+						</ul>
+					</li>
+				</ul>
+				<p>&nbsp;</p>
+				<p>The ex_author and ex_publisher tables were created to hold values that would appear more than one time in the ex_book table. This choice was in part to limit the addition of books whose author and/or publisher were unknown, requiring the user to add the author/publisher to their respective table first. </p>
+				<p>&nbsp;</p>
+				<p><img src="images/databe-lib.png" alt="library_database" style="max-width: 65%;"/></p>
+				<h4>Website Backend (Server.js)</h4>
+				<p>The express-based backend to the website is used to fetch and manipulate the tables in the database via a user interface. There are three different types of actions the backend is capable of performing:</p>
+				<ul>
+					<li><strong>GET:</strong> allows for fetching the tables. Only one functions exists for this, running the query SELECT * FROM &lt;table&gt;</li>
+					<li><strong>POST:</strong> allows for a tuple to be inserted into a selected table by running the query INSERT INTO &lt;table&gt; (&lt;columns&gt;) VALUES (&lt;column values&gt;)</li>
+					<li><strong>PUT:</strong> allows for a tuple in a selected table to be updated by running the query<br /> UPDATE &lt;table&gt; SET &lt;variable&gt; = &lt;data&gt; WHERE &lt;ID&gt; = &lt;passed ID&gt;</li>
+					<li><strong>DELETE:</strong> allows for a tuple in a selected table to be deleted by running the query DELETE FROM &lt;table&gt; WHERE &lt;ID&gt; = &lt;passed ID&gt;
+						<ul>
+							<li>If deleting from ex_book , the tuple is deleted immediately.</li>
+							<li>If deleting from ex_author or e x_publisher , all tuples within ex_book that contain the ID of the author/publisher being deleted are deleted first to ensure that no foreign key constraints are hit (there are no tuples in ex_book that reference a value that no longer exists).</li>
+						</ul>
+					</li>
+				</ul>
+				<h4>Website</h4>
+				<p><img src="images/web1.png" alt="website-demo" style="display: block; margin-left: auto; margin-right: auto; max-width: 95%;"/></p>
+				<p><img src="images/web2.png" alt="website-demo" style="display: block; margin-left: auto; margin-right: auto; max-width: 95%;"/></p>
+				<p><img src="images/web3.png" alt="website-demo" style="display: block; margin-left: auto; margin-right: auto; max-width: 95%;"/></p>
+				<h3>Testing and Results</h3>
+				<h4><strong>Data Integration</strong></h4>
+				<p>Testing was done on all aspects of the design listed above, notably data integration and the web application. The team tested data insertion by running a few queries on a third-party API and ensured the data was correctly imported into the DB. Testing involved looking up the tables in MariaDB&rsquo;s phpMyAdmin UI and the command line MySQL tool. If data insertion produced errors, simply truncated the table, fixed the bugs, and restarted the process.</p>
+				<p>Once verified, program allowed a shell script to repeatedly run the data insertion program for the rest of the queries.</p>
+				<h4><strong>Web Application </strong></h4>
+				<p>The web application was tested manually by selecting a multitude of values supplied within the form. Since the forms are fairly simple, there aren&rsquo;t many edge cases in which user input could be interpreted incorrectly. The website&rsquo;s backend was tested with Postman, making several calls to each of the endpoints, passing data that came from the output of the website&rsquo;s forms.</p>
+				<p style="text-align: center;"><a href="https://github.com/sasmazonur/"><img src="images/github-black.png" alt="github" width="70" height="63.28" /></a></p>
+			</article>
+		</div>
+		<!-- Footer -->
+		<!-- start copyright -->
+		<footer id="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<p class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">
+						Copyright &copy; Onur Sasmaz</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end copyright -->
+	</body>
+</html>

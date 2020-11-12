@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Capstone</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/templatemo-style.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.singlePageNav.min.js"></script>
+		<script src="js/typed.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/custom.js"></script>
+	</head>
+	<body id="top">
+		<!-- start preloader -->
+		<div class="preloader">
+			<div class="sk-spinner sk-spinner-wave">
+				<div class="sk-rect1"></div>
+				<div class="sk-rect2"></div>
+				<div class="sk-rect3"></div>
+				<div class="sk-rect4"></div>
+				<div class="sk-rect5"></div>
+			</div>
+		</div>
+		<!-- end preloader -->
+		<!-- start navigation -->
+		<nav class="navbar navbar-default templatemo-nav" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+					</button>
+					<a onclick="goBack()" class="navbar-brand">Home</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- Menu -->
+		<!-- Main -->
+		<div id="main">
+			<!-- Post -->
+			<article class="post">
+				<header>
+					<div class="title" style="background-image:url(images/introgiff.gif);">
+						<h1 style="text-align: center;"><span style="background-color: #ffffff; color: #000000;"><strong>ROBOTIC TEST BED FOR COLLABORATIVE IMAGING USING MACHINE LEARNING</strong></span></h1>
+					</div>
+					<div class="meta">
+						<time class="published" datetime="2020-9-20">January, 2020</time>
+						<a href="#" class="author"><span class="name">Onur Sasmaz</span><img src="images/avatar.jpg" alt="" /></a>
+					</div>
+				</header>
+				<h4><strong>Uses: </strong>C++, Python, ROS, Gazebo, Rviz</h4>
+				<p>This project’s goal is to create a collaborative robot that is designed to keep track of packages in a warehouse.</p>
+				<p>With the rise of online shopping, it is becoming more and more important to be able to organize everyone’s individual packages. Lost packages have become a large problem as employees have misplaced many packages due to mistakes or poor organization and these packages then need to be replaced. Overall, these mistakes have lead to a loss of millions in most inventory. This robot will solve this problem by creating a map of the warehouse and being able to read barcodes. The robot will be mainly built from a TurtleBot 3 kit with additional hardware including a RealSense Camera, Intel NUC, and a Widowx ARM. The robot will also be using the operating system ROS and be programmed using Python and C.  </p>
+				<p style="text-align: center;"><a href="https://github.com/sasmazonur/Human-Following-Robot"><img src="images/github-black.png" alt="github" width="70" height="63.28" /></a></p>
+				<h3>Description</h3>
+				<p>This project requires us to create a test bed that will test collaborative interfaces, improve the SLAM performance using accelerators integration, and implement Robot-Training Mode using Vision. Testing a comprehensive collaborative interface will allow us to make sure we understand what is going on in the test and how the robot AI preforms. In order to keep track of packages, we will use the camera to read the barcodes of packages. This will allow us to identify the package and record it’s location. SLAM performance allows the robot to map it’s environment Using accelerator integration allows better prediction of moving objects. Vision is software that allows customizable applications, rich graphical reports, and database management. This will allow us to accurately portray how a robot will act by creating our own program. Overall, completing this project will allow a much more in depth way to test future robots and make sure they are qualified for consumer use.</p>
+				<h3>Scope</h3>
+				<ul>
+					<li>Testing Collaborative Inference (Like Multiple Mobile Cameras)</li>
+					<li>Read barcodes using the camera and not the package&rsquo;s location</li>
+					<li>Improvement in the SLAM performance using Accelerators integration to ROS</li>
+					<li>Implementing Robot-Training Mode using Vision</li>
+					<li>Creating a simulation using Gazebo</li>
+					<li>Building a prototype to keep track of packages using barcodes and display collaborative robots</li>
+				</ul>
+				
+				<h3>HARDWARE SPECIFICATION</h3>
+				<p>The table below defines the minimum hardware requirements for Human Follower project. The hardware is necessary to create a 2D/3D map of an unknown environment and find the barcode of lost package.</p>
+				<table style="height: 155px; margin-left: auto; margin-right: auto;" width="333">
+					<tbody>
+						<tr style="height: 18px;">
+							<td style="width: 103px; height: 18px; text-align: center;"><strong>Items</strong></td>
+							<td style="width: 104px; height: 18px; text-align: center;"><strong>FollowBot</strong></td>
+						</tr>
+						<tr style="height: 18px;">
+							<td style="width: 103px; height: 18px; text-align: center;">Robot Chasis</td>
+							<td style="width: 104px; height: 18px; text-align: center;">TurtleBot3 Waffle</td>
+						</tr>
+						<tr style="height: 18px;">
+							<td style="width: 103px; height: 18px; text-align: center;">Computer</td>
+							<td style="width: 104px; height: 18px; text-align: center;">Intel NUC;</td>
+						</tr>
+						<tr style="height: 36px;">
+							<td style="width: 103px; height: 36px; text-align: center;">Camera</td>
+							<td style="width: 104px; height: 36px; text-align: center;">Intel RealsenseTM D415</td>
+						</tr>
+						<tr style="height: 36px;">
+							<td style="width: 103px; height: 36px; text-align: center;">Laser Distance Sensor</td>
+							<td style="width: 104px; height: 36px; text-align: center;">360 Laser Distance Sensor LDS-01</td>
+						</tr>
+						<tr>
+							<td style="width: 103px; text-align: center;">Actuator</td>
+							<td style="width: 104px; text-align: center;">XM430-W210</td>
+						</tr>
+						<tr>
+							<td style="width: 103px; text-align: center;">IMU</td>
+							<td style="width: 104px; text-align: center;">
+								<p>Gyroscope 3 Axis</p>
+								<p>Accelerometer 3 Axis</p>
+								<p>Magnetometer 3 Axis</p>
+							</td>
+						</tr>
+						<tr>
+							<td style="width: 103px; text-align: center;">Battery</td>
+							<td style="width: 104px; text-align: center;">185Wh/50000mAh(Max.130W)</td>
+						</tr>
+					</tbody>
+				</table>
+				<h3>IMAGES</h3>
+				<p><img style="display: block; margin-left: auto; margin-right: auto; max-width: 90%;" src="images/map_creation.gif" alt="map_showing" /></p>
+				<p style="text-align: center;">3D Map</p>
+				<p><img style="display: block; margin-left: auto; margin-right: auto; max-width: 70%;" src="images/map_creation.png" alt="map_creation" /></p>
+				<p style="text-align: center;">Mapped Environment</p>
+				<p><img style="display: block; margin-left: auto; margin-right: auto; max-width: 90%;" src="images/navigation_smallroom.gif" alt="navigation_smallroom" /></p>
+				<p style="text-align: center;">Navigation</p>
+				<p><img style="display: block; margin-left: auto; margin-right: auto; max-width: 90%;" src="images/barcode.png" alt="barcode" /></p>
+				<p style="text-align: center;">Barcode</p>
+
+				<h3>Testing in Simulation:</h3>
+				<p><img style="display: block; margin-left: auto; margin-right: auto;max-width: 90%;" src="images/gazebo_house.png" alt="gazebo_house" /></p>
+				<p><img style="display: block; margin-left: auto; margin-right: auto; max-width: 90%;" src="images/gazebo_world.png" alt="gazebo_world" /></p>
+			</article>
+		</div>
+		<!-- Footer -->
+		<!-- start copyright -->
+		<footer id="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<p class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">
+						Copyright &copy; Onur Sasmaz</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end copyright -->
+	</body>
+</html>
