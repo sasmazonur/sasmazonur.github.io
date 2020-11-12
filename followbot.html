@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>FollowBot</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/templatemo-style.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.singlePageNav.min.js"></script>
+		<script src="js/typed.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/custom.js"></script>
+	</head>
+	<body id="top">
+		<!-- start preloader -->
+		<div class="preloader">
+			<div class="sk-spinner sk-spinner-wave">
+				<div class="sk-rect1"></div>
+				<div class="sk-rect2"></div>
+				<div class="sk-rect3"></div>
+				<div class="sk-rect4"></div>
+				<div class="sk-rect5"></div>
+			</div>
+		</div>
+		<!-- end preloader -->
+		<!-- start navigation -->
+		<nav class="navbar navbar-default templatemo-nav" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+					</button>
+					<a onclick="goBack()" class="navbar-brand">Home</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- Menu -->
+		<!-- Main -->
+		<div id="main">
+			<!-- Post -->
+			<article class="post">
+				<header>
+					<div class="title" style="background-image:url(images/introgiff.gif);">
+						<h1 style="text-align: center;"><span style="background-color: #ffffff; color: #000000;"><strong>FollowBot</strong></span></h1>
+					</div>
+					<div class="meta">
+						<time class="published" datetime="2020-9-20">January 20, 2020</time>
+						<a href="#" class="author"><span class="name">Onur Sasmaz</span><img src="images/avatar.jpg" alt="" /></a>
+					</div>
+				</header>
+				<h4><strong>Uses: </strong>C++, C, C#, Python</h4>
+				<p>The FollowBot has been designed with the Intel RealSense Depth Camera D415 series that uses stereo vision to calculate the distance between robot and human.The robot was implemented in Python, C++, C, C#, and has been tested in real-life testing scenarios. The human following method has the ability to differentiate a person and other objects. As well as follow a person in real-time using deep neural networks. The human following robot also has the ability to create 2D and 3D maps of its environment using simultaneous localization and mapping (SLAM). The 2D occupancy grid map is created from the laser scan data, and the mobile robot pose. And 3D map created by using the RGB-D Graph SLAM approach called Real-Time Appearance Based Mapping (RTAB-Map). </p>
+				<p style="text-align: center;"><a href="https://github.com/sasmazonur/Human-Following-Robot"><img src="images/github-black.png" alt="github" width="70" height="63.28" /></a></p>
+				<h3>Mapping and Navigation</h3>
+				<p>The first objective of this project is to explore and create a 2D/3D map of the unknown environment while estimating the pose of the robot itself. SLAM is an algorithm used in robotics to create a map of an unknown environment or update a map within a known environment. The term SLAM is an acronym for Simultaneous Localization And Mapping. Suppose the LIDAR sensor or Intel RealSense D415 detects an object, the robot locates where that obstacle is, given the localization of the sensor itself and the distance and position of the detected obstacle, and marks the barrier in the map. Each time a new sensor measurement or odometry data is received. The SLAM algorithm will update the recent estimate for the robot’s localization and map of its environment.</p>
+				<h3>Human Follower</h3>
+				<p>The second objective of this project is to be able to follow a human. This task is performed in two main steps, detect a human, and follow the detected human. To able to follow a human, we need to identify if a human is into view of the camera. For human detection, we will use the OpenCV deep learning module with the MobileNet-SSD network. OpenCV is one of the popular open-source real-time computer vision libraries, mainly written in C/C++ and Python. The deep neural network module allows us to load a pre-trained model from one of the most popular deep learning frameworks, Caffe. The MobileNet-SSD gives notable outcomes in terms of accuracy and speed in object detection activities. After the initial detection, the distance between the human and robot must be calculated to keep the human within a reasonable distance. We will be getting depth values from our Intel RealSense D415 camera using point cloud and PCL notelets. The ROS sensor_msgs package defines a class for the PointCloud2 message type. The Robot can get the x, y, and z distance of each point from the 3D Camera with respect to the robots’s axis. Using this message type module, we can use the depth values to create a search box. If the human is too close or too far to the robot, it will move backward or forward accordingly. As well as, if the human is positioning to the right or left of the robot, the robot will rotate itself right or left accordingly.</p>
+				<h3>HARDWARE SPECIFICATION</h3>
+				<p>The table below defines the minimum hardware requirements for Human Follower project. The hardware is necessary to create a 2D/3D map of an unknown environment and follow a person.</p>
+				<table style="height: 155px; margin-left: auto; margin-right: auto;" width="333">
+					<tbody>
+						<tr style="height: 18px;">
+							<td style="width: 103px; height: 18px; text-align: center;"><strong>Items</strong></td>
+							<td style="width: 104px; height: 18px; text-align: center;"><strong>FollowBot</strong></td>
+						</tr>
+						<tr style="height: 18px;">
+							<td style="width: 103px; height: 18px; text-align: center;">Robot Chasis</td>
+							<td style="width: 104px; height: 18px; text-align: center;">TurtleBot3 Waffle</td>
+						</tr>
+						<tr style="height: 18px;">
+							<td style="width: 103px; height: 18px; text-align: center;">Computer</td>
+							<td style="width: 104px; height: 18px; text-align: center;">Intel NUC;</td>
+						</tr>
+						<tr style="height: 36px;">
+							<td style="width: 103px; height: 36px; text-align: center;">Camera</td>
+							<td style="width: 104px; height: 36px; text-align: center;">Intel RealsenseTM D415</td>
+						</tr>
+						<tr style="height: 36px;">
+							<td style="width: 103px; height: 36px; text-align: center;">Laser Distance Sensor</td>
+							<td style="width: 104px; height: 36px; text-align: center;">360 Laser Distance Sensor LDS-01</td>
+						</tr>
+						<tr>
+							<td style="width: 103px; text-align: center;">Actuator</td>
+							<td style="width: 104px; text-align: center;">XM430-W210</td>
+						</tr>
+						<tr>
+							<td style="width: 103px; text-align: center;">IMU</td>
+							<td style="width: 104px; text-align: center;">
+								<p>Gyroscope 3 Axis</p>
+								<p>Accelerometer 3 Axis</p>
+								<p>Magnetometer 3 Axis</p>
+							</td>
+						</tr>
+						<tr>
+							<td style="width: 103px; text-align: center;">Battery</td>
+							<td style="width: 104px; text-align: center;">185Wh/50000mAh(Max.130W)</td>
+						</tr>
+					</tbody>
+				</table>
+				<h3>IMAGES</h3>
+				<p><img style="display: block; margin-left: auto; margin-right: auto;" src="images/3dmap_bigroom.png" alt="3dmapping" /></p>
+				<p><img style="display: block; margin-left: auto; margin-right: auto; max-width: 90%;" src="images/follower_screen.png" alt="3dmapping" /></p>
+			</article>
+		</div>
+		<!-- Footer -->
+		<!-- start copyright -->
+		<footer id="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<p class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">
+						Copyright &copy; Onur Sasmaz</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end copyright -->
+	</body>
+</html>

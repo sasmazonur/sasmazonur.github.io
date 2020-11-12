@@ -1,189 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <title>Global</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="description" content="HTML5 website template">
-      <meta name="keywords" content="global, template, html, sass, jquery">
-      <meta name="author" content="Bucky Maler">
-      <link rel="stylesheet" href="assets/css/main.css">
-   </head>
-   <body>
-      <!-- notification for small viewports and landscape oriented smartphones -->
-      <div class="device-notification">
-         <a class="device-notification--logo" href="#0">
-            <img src="assets/img/logo.png" alt="Global">
-            <p>Onur Sasmaz</p>
-         </a>
-         <p class="device-notification--message">Orient your device to portrait or find a larger screen. You won't be disappointed.</p>
-      </div>
-      <div class="perspective effect-rotate-left">
-         <div class="container">
-            <div class="outer-nav--return"></div>
-            <div id="viewport" class="l-viewport">
-               <div class="l-wrapper">
-                  <header class="header">
-                     <a class="header--logo" href="#0">
-                        <img src="assets/img/logo.png" width="45" height="60" alt="logo">
-                        <p>Onur</p>
-                     </a>
-                     <button class="header--cta cta">Contact Me</button>
-                     <div class="header--nav-toggle">
-                        <span></span>
-                     </div>
-                  </header>
-                  <nav class="l-side-nav">
-                     <ul class="side-nav">
-                        <li class="is-active"><span>Home</span></li>
-                        <li><span>About Me</span></li>
-                        <li><span>Works</span></li>
-                        <li><span>About</span></li>
-                        <li><span>Contact Me</span></li>
-                     </ul>
-                  </nav>
-                  <ul class="l-main-content main-content">
-                     <li class="l-section section section--is-active">
-                        <div class="intro">
-                           <div class="intro--banner">
-                              <h1><br>Onur Sasmaz</h1>
-                              </br>
-                              <h2>Software Engineer</h2>
-                              <button class="cta">
-                                 Contact Me
-                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                                       <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                                    </g>
-                                 </svg>
-                                 <span class="btn-background"></span>
-                              </button>
-                              <img src="assets/img/pictureme.png" width="500" alt="Me">
-                           </div>
-                           <div class="intro--options">
-                              <a >
-                                 <h3>if(LongStoryShort == True)</h3>
-                                 <p>I'm a software engineer currently in Oregon, US specializing in Artificial Intelligence, Machine Learning and Computer Vision.</p>
-                                 <h3>else{</h3>
-                              </a>
-                           </div>
-                        </div>
-                     </li>
-                     <li class="l-section section">
-                        <div class="about">
-                           <div class="about--banner">
-                              <h2>About Me</h2>
-                              <p>I recently graduated from Oregon State University with a Computer Science degree in Artificial Intelligence. I believe that Artificial Intelligence and Mixed Reality are two of the most promising technologies for changing the world. </p>
-                              <p>I am looking for opportunities in technology companies that aim to create or develop complex technologies that improve people's lives. I have experience in Object-Oriented Programming within networks as well as online and mobile applications. I am also familiar with programming robots with the Robot Operating System (ROS).</p>
-                              <p>In my free time, I like to keep my self updated with emerging technologies and trends. Equally, I like to do outdoor activities that improve my health and well-being. </p>
-                           </div>
-                        </div>
-                     </li>
-                     <li class="l-section section">
-                        <div class="work">
-                           <h2>Projects</h2>
-                           <div class="work--lockup">
-                              <ul class="slider">
-                                 <li class="slider--item slider--item-left">
-                                    <a href="#0">
-                                       <div class="slider--item-image">
-                                          <img src="assets/img/cb2.png" alt="CollaborativeRobots">
-                                       </div>
-                                       <p class="slider--item-title">Collaborative Robots</p>
-                                       <p class="slider--item-description">Autonomous mobile robot design to find lost packages in e-commerce warehouses, to improve efficiency and costumer satisfaction.Robot is able to create and navigate 2D and 3D maps using SLAM</p>
-                                    </a>
-                                 </li>
-                                 <li class="slider--item slider--item-center">
-                                    <a href="#0">
-                                       <div class="slider--item-image">
-                                          <img src="assets/img/followbot3.png" alt="FollowBot">
-                                       </div>
-                                       <p class="slider--item-title">FollowBot</p>
-                                       <p class="slider--item-description">Augmented Reality assisted Human Follower Robot with the ability to create and navigate 2D and 3D maps using SLAM</p>
-                                    </a>
-                                 </li>
-                                 <li class="slider--item slider--item-right">
-                                    <a href="#0">
-                                       <div class="slider--item-image">
-                                          <img src="assets/img/parallel.png" alt="ParallelPrograming">
-                                       </div>
-                                       <p class="slider--item-title">Parallel Programing</p>
-                                       <p class="slider--item-description">Applications that design to accelerate to improve user interaction and simulation and computational performance using CUDA, OpenCL, SIMD and OpenMP</p>
-                                    </a>
-                                 </li>
-                              </ul>
-                              <div class="slider--prev">
-                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                                       <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
-                                          c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
-                                          c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
-                                    </g>
-                                 </svg>
-                              </div>
-                              <div class="slider--next">
-                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                                       <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                                    </g>
-                                 </svg>
-                              </div>
-                           </div>
-                           <p onclick="location.href='projects.html';" class="seeMoreButton">See More</p>
-                        </div>
-                     </li>
-                     <li class="l-section section">
-                        <div class="about">
-                           <div class="about--banner">
-                              <h1>CLASSES THAT I COMPLETED</h1>
-                              <ul class="multi-column">
-                                 <li>CS 440 Database Management Systems </li>
-                                 <li>CS 475 Parallel Programming</li>
-                                 <li>CS 492 Mobile Software Development</li>
-                                 <li>ECE 272 Digital Logic Design</li>
-                                 <li>CS 271 Computer Architecture &amp; Assembly</li>
-                                 <li>CS 331 Artificial Intelligence</li>
-                                 <li>CS 434 Machine Learning and Data Mining</li>
-                                 <li>ST 421 Mathematical Statistics</li>
-                                 <li>MTH 254 Vector Calculus</li>
-                                 <li>MTH 341 Linear Algebra</li>
-                                 <li>MTH 306 Matrix &amp; Power Series Methods</li>
-                              </ul>
-                           </div>
-                        </div>
-                     </li>
-                     <li class="l-section section">
-                        <div class="contact">
-                           <div class="contact--lockup">
-                              <div class="modal">
-                                 <div class="modal--information">
-                                    <p>2500 NW Monroe Ave,</p>
-                                    <p>Corvallis, OR 97331</p>
-                                 </div>
-                                 <ul class="modal--options">
-                                    <li><a href="https://www.linkedin.com/in/onursasmaz/">LinkedIn</a></li>
-                                    <li><a href="https://github.com/sasmazonur?tab=repositories">GitHub</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                  </ul>
-               </div>
+    <head>
+        <meta charset="utf-8">
+        <title>Onur Sasmaz</title>
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/templatemo-style.css">
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.singlePageNav.min.js"></script>
+        <script src="js/typed.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/custom.js"></script>
+    </head>
+    <body id="top">
+        <!-- start preloader -->
+        <div class="preloader">
+            <div class="sk-spinner sk-spinner-wave">
+                <div class="sk-rect1"></div>
+                <div class="sk-rect2"></div>
+                <div class="sk-rect3"></div>
+                <div class="sk-rect4"></div>
+                <div class="sk-rect5"></div>
             </div>
-         </div>
-         <ul class="outer-nav">
-            <li class="is-active">Home</li>
-            <li>About Me</li>
-            <li onclick="location.href='projects.html';" >Projects</li>
-            <li>Classes</li>
-            <li>Contact Me</li>
-         </ul>
-      </div>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-      <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
-      <script src="assets/js/functions-min.js"></script>
-   </body>
-</html>
+        </div>
+        <!-- end preloader -->
+        <!-- start navigation -->
+        <nav class="navbar navbar-default templatemo-nav" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand">Onur Sasmaz</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#top">HOME</a></li>
+                        <li><a href="#aboutMe">ABOUT ME</a></li>
+                        <li><a href="#portfolio">PROJECTS</a></li>
+                        <li><a href="#service">SKILLS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end navigation -->
+        <!-- start home -->
+        <section id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-8">
+                        <h1 class="wow fadeIn" data-wow-offset="50" data-wow-delay="0.9s">Onur Sasmaz </h1>
+                        <h2 >Software Engineer</h2>
+                        <div class="element">
+                            <div class="sub-element">if ( longStoryShort == true ){</div>
+                            <div class="sub-element">I'm a software engineer currently in Oregon, US specializing in Artificial Intelligence, Machine Learning and Computer Vision.}</div>
+                        </div>
+                        <a data-scroll href="#contact" class="btn btn-default wow fadeInUp" data-wow-offset="50" data-wow-delay="0.6s">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end home -->
+        <!-- start about me -->
+        <section id="aboutMe">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">About <span>Me</span></h2>
+                    </div>
+                    <div class="about_me">
+                        <p>I recently graduated from Oregon State University with a Computer Science degree in Artificial Intelligence. I believe that Artificial Intelligence and Mixed Reality are two of the most promising technologies for changing the world. </p>
+                        <p>I am looking for opportunities in technology companies that aim to create or develop complex technologies that improve people's lives. I have experience in Object-Oriented Programming within networks as well as online and mobile applications. I am also familiar with programming robots with the Robot Operating System (ROS).</p>
+                        <p>In my free time, I like to keep my self updated with emerging technologies and trends. Equally, I like to do outdoor activities that improve my health and well-being. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End about me -->
+        <!-- start Skills -->
+        <section id="about">
+            <div class="resizeMe">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s"><span>SKILLS</span></h2>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                            <div class="media">
+                                <div class="media-heading-wrapper">
+                                    <div class="media-object pull-left">
+                                        <i class="fa fa-code"></i>
+                                    </div>
+                                    <h3 class="media-heading">Computer Programming &amp; Coding</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-offset="50" data-wow-delay="0.9s">
+                            <div class="media">
+                                <div class="media-heading-wrapper">
+                                    <div class="media-object pull-left">
+                                        <i class="fa fa-diamond"></i>
+                                    </div>
+                                    <h3 class="media-heading">Artificial Intelligence</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
+                            <div class="media">
+                                <div class="media-heading-wrapper">
+                                    <div class="media-object pull-left">
+                                        <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                                    </div>
+                                    <h3 class="media-heading">Machine Learning &amp; Data Minning</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                            <div class="media">
+                                <div class="media-heading-wrapper">
+                                    <div class="media-object pull-left">
+                                        <i class="fa fa-mobile"></i>
+                                    </div>
+                                    <h3 class="media-heading">Mobile &amp; Web Development</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-offset="50" data-wow-delay="0.9s">
+                            <div class="media">
+                                <div class="media-heading-wrapper">
+                                    <div class="media-object pull-left">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    <h3 class="media-heading">Robotics</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
+                            <div class="media">
+                                <div class="media-heading-wrapper">
+                                    <div class="media-object pull-left">
+                                        <i class="fa fa-tasks"></i>
+                                    </div>
+                                    <h3 class="media-heading">Parallel Programming</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+                            <div class="media">
+                                <div class="media-heading-wrapper">
+                                    <div class="media-object pull-left">
+                                        <i class="fa fa-flag" aria-hidden="true"></i>
+                                    </div>
+                                    <h3 class="media-heading">Testing &amp; Troubleshooting</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-offset="50" data-wow-delay="0.9s">
+                            <div class="media">
+                                <div class="media-heading-wrapper">
+                                    <div class="media-object pull-left">
+                                        <i class="fa fa-cubes"></i>
+                                    </div>
+                                    <h3 class="media-heading">Computer Vision</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
+                            <div class="media">
+                                <div class="media-heading-wrapper">
+                                    <div class="media-object pull-left">
+                                        <i class="fa fa-database" aria-hidden="true"></i>
+                                    </div>
+                                    <h3 class="media-heading">RESTful Web Services</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end Skills -->
+        <!-- start portfolio -->
+        <section id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s"><span>SOME</span> PROJECTS</h2>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                            <img src="images/p1.png" class="img-responsive" alt="portfolio img 1">
+                            <div class="portfolio-overlay">
+                                <h4>FollowBot</h4>
+                                <p>Human Follower Robot</p>
+                                <p>Using: C, C#, C++, Python, OpenCV, ROS, Unity, .NET, Gazebo, Rviz</p>
+                                <a href="followbot.html" class="btn btn-default">DETAIL</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                            <img src="images/p2.png" class="img-responsive" alt="portfolio img 2">
+                            <div class="portfolio-overlay">
+                                <h4>Wasteagram</h4>
+                                <p>High-performance Mobile App to be built for iOS and Android.</p>
+                                <p>Using: Flutter SDK, Dart, Dart DevTools, Google Cloud Storage, Firebase Analytics</p>
+                                <a href="westagram.html" class="btn btn-default">DETAIL</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                            <img src="images/p3.png" class="img-responsive" alt="portfolio img 3">
+                            <div class="portfolio-overlay">
+                                <h4>FollowBot w/ Augmented Reality</h4>
+                                <p>FollowBot Project improved with Microsoft Hololens 1.</p>
+                                <a href="followbot-hololens.html" class="btn btn-default">DETAIL</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                            <img src="images/p4.png" class="img-responsive" alt="portfolio img 4">
+                            <div class="portfolio-overlay">
+                                <h4>Collabrative Robots</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                                <a href="404.html" class="btn btn-default">DETAIL</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                            <img src="images/p5.png" class="img-responsive" alt="portfolio img 5">
+                            <div class="portfolio-overlay">
+                                <h4>Machine Learning & Data Minning</h4>
+                                <p>Supervised, unsupervised, reinforcement learning algorithms to predict, analyze and evalute results.</p>
+                                <a href="machine-learning.html" class="btn btn-default">DETAIL</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                            <img src="images/p6.png" class="img-responsive" alt="portfolio img 6">
+                            <div class="portfolio-overlay">
+                                <h4>Artificial Intelligence</h4>
+                                <p>Implement agents using search algorithms, Develop strategies, Implement a Bayesian network and more.</p>
+                                <a href="artificial-intelligence.html" class="btn btn-default">DETAIL</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                            <img src="images/p7.png" class="img-responsive" alt="portfolio img 7">
+                            <div class="portfolio-overlay">
+                                <h4>BarFinder</h4>
+                                <p>Help to find; bars address, the food they have on their menu, the times they play their different types of music, and more exciting information.</p>
+                                <a href="404.html" class="btn btn-default">DETAIL</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                            <img src="images/p8.png" class="img-responsive" alt="portfolio img 8">
+                            <div class="portfolio-overlay">
+                                <h4>Parallel Programming</h4>
+                                <p>Projects that to improve tasks that require  parallelism, both on a CPU and a GPU.CUDA, OpenCL, SIMD, OPenMP</p>
+                                <a href="parallel-programming.html" class="btn btn-default">DETAIL</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                            <img src="images/p9.png" class="img-responsive" alt="portfolio img 9">
+                            <div class="portfolio-overlay">
+                                <h4>RESTful API</h4>
+                                <p>RESTful application deployed on GCP using Datastore to store the data. Uses a JWT (Auth0) for authentication.</p>
+                                <a href="404.html" class="btn btn-default">DETAIL</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end portfolio -->
+        <!-- start service -->
+        <section id="service">
+            <div class="container" style="text-align: center;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s"> <span>Programming</span> Skills</h2>
+                    </div>
+                    <div class="col-md-3 wow fadeIn opacMe" data-wow-offset="50" data-wow-delay="0.6s">
+                        <i class="fa fa-laptop"></i>
+                        <h4>Languages</h4>
+                        <p style="font-size: 20px;">C, C#, C++, Python, Dart</p>
+                    </div>
+                    <div class="col-md-3  wow fadeIn opacMe" data-wow-offset="50" data-wow-delay="0.9s">
+                        <i class="fa fa-cloud"></i>
+                        <h4>Frameworks</h4>
+                        <p style="font-size: 20px;">ROS, OpenCL, CUDA, OpenCV, TensorFlow, Pytorch, .NET, Flutter, Unity, NodeJS, Express</p>
+                    </div>
+                    <div class="col-md-3  wow fadeIn opacMe" data-wow-offset="50" data-wow-delay="0.6s">
+                        <i class="fa fa-cog"></i>
+                        <h4>Tools</h4>
+                        <p style="font-size: 20px;">Git, Postman, Docker, Rviz, Gazebo</p>
+                    </div>
+                    <div class="col-md-3 wow fadeIn opacMe" data-wow-offset="50" data-wow-delay="0.6s">
+                        <i class="fa fa-cog"></i>
+                        <h4>Databases</h4>
+                        <p style="font-size: 20px;">SQL, NoSQL (Firestore, MangoDB), AWS</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end servie -->
+        <!-- start contact -->
+        <section id="contact">
+            <div class="contact-box">
+                <h2>Contact <span>Me</span></h2>
+                <p>You can contact with me via LinkedIn:</p>
+                <div class="boxi-box effect8">
+                    <p style="
+                        padding-bottom: 10px;
+                        "><a href="https://www.linkedin.com/in/onursasmaz/"><img src="images/linkedin.png" alt="linkedIn" width="50" height="50"></a><strong>&nbsp; &nbsp;LinkedIn</strong></p>
+                        <p><a href="https://github.com/sasmazonur"><img src="images/github.png" alt="github" width="50" height="50"/></a>  <strong>&nbsp; &nbsp;GitHub</strong></p>
+                    </div>
+                </div>
+            </section>
+            <!-- end contact -->
+            <!-- start copyright -->
+            <footer id="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <p class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">
+                            Copyright &copy; Onur Sasmaz</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- end copyright -->
+        </body>
+    </html>
