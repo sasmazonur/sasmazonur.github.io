@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Capture The Flag</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/templatemo-style.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.singlePageNav.min.js"></script>
+		<script src="js/typed.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/custom.js"></script>
+	</head>
+	<body id="top">
+		<!-- start preloader -->
+		<div class="preloader">
+			<div class="sk-spinner sk-spinner-wave">
+				<div class="sk-rect1"></div>
+				<div class="sk-rect2"></div>
+				<div class="sk-rect3"></div>
+				<div class="sk-rect4"></div>
+				<div class="sk-rect5"></div>
+			</div>
+		</div>
+		<!-- end preloader -->
+		<!-- start navigation -->
+		<nav class="navbar navbar-default templatemo-nav" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+					</button>
+					<a onclick="goBack()" class="navbar-brand">Home</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- Menu -->
+		
+		<!-- Main -->
+		<div id="main">
+			<!-- Post -->
+			<article class="post">
+				<header>
+					<div class="title" style="background-image:url(images/capture-flag.png);">
+						<h1 style="text-align: center;"><span style="background-color: #ffffff; color: #000000;"><strong>Capture The Flag</strong></span></h1>
+					</div>
+					<div class="meta">
+						<time class="published" datetime="2020-9-20">APRIL, 2019</time>
+						<a href="#" class="author"><span class="name">Onur Sasmaz</span><img src="images/avatar.jpg" alt="" /></a>
+					</div>
+				</header>
+				<h4><strong>Uses: </strong> Java, IntelliJ</h4>
+				<h4><strong>The Goal of this project was to learn:</strong></h4>
+				<ul>
+					<li>Version Control</li>
+					<li>Usability Testing</li>
+					<li>The STLC</li>
+					<li>Manual testing, Unit testing</li>
+					<li>Automated and Mutant Testing</li>
+					<li>Software Maintenance</li>
+					<li>Software Inspections/Reviews</li>
+					<li>Integration and Regression Testing</li>
+					<li>Debugging
+					<li>Causality and localization</li>
+				</ul>
+				<h4><strong>After this project I was able to:</strong></h4>
+				<ul>
+					<li>Apply automated tools such as make and Git in a realistic setting</li>
+					<li>Describe the cost-benefit trade-offs inherent in the use of automated tools for building software and configuration management</li>
+					<li>Describe several techniques for validating and measuring the quality of software</li>
+					<li>Apply testing techniques, including blackbox and whitebox techniques, automatic testing activities, and regression testing&nbsp; Use appropriate techniques and tools, including a debugger, to locate program faults</li>
+					<li>Describe several types of maintenance processes associated with correcting and enhancing software systems</li>
+					<li>Participate effectively in a software inspection</li>
+					<li>Participate effectively in a team environment</li>
+				</ul>
+				<h3>Project</h3>
+				<p><img src="images/capture-flag.png" alt="capture-flag" style="display: block; margin-left: auto; margin-right: auto; max-width: 95%;"/></p>
+				<p>The project is a mod for the PC version of Minecraft. The mod is a “Capture the flag” game mode for Minecraft, where admins are able to set up classes, which allow the players to start with a predetermined load out upon spawning that persist even after death, player spawn points for red and blue teams , and flag spawn points for both teams. The mod is intended for people who want to set up their own Minecraft server and want to experience the classic capture the flag experience in Minecraft. Ideally, the mod would be downloaded and set up by people who have experience setting up Minecraft servers as the mod doesn’t walk you through the process of hosting a server, but that can be learned easily online. </p>
+				<div style="text-align: center;">
+					<p><strong>Project Report</strong></p>
+					<a href="https://drive.google.com/file/d/1X5p1GSZnztQ57JqYon6y3hzRc-Gwy8AK/view?usp=sharing"><img src="images/pdf-icon.png" alt="pdf" style="max-width: 5%;"/></a></h4>
+				</div>
+				<h4><strong>Manual Capability Testing</strong></h4>
+				<p>The manual unit test is done via a Minecraft client connected to a Bukkit server running the CTF plugin. We had two people logged into the server so that we could test the multiplayer mechanics of the plugin.</p>
+				<p>We discovered several bugs throughout out testing:</p>
+				<p>Some are minor, while others are major. The bug where a player can drop the flag out of their inventory and potentially destroy it by dropping it into fire or lava must be fixed. This can be remedied by disabling the players in the game from dropping items. This is already done in the code on GitHub, however, it appears to not be working as intended in the game. Similarly, the bug where the flag disappears if it happens to be in the player&rsquo;s inventory when they change classes needs to be fixed, as it is something that is likely to happen with enough players. When either of these bugs occurs, the mod effectively breaks, sometimes choosing to do either no flag or in one instance we tried but were unable to replicate, there ended up being two flags to a team.</p>
+				<p>We also recommend implementing a way for the players to kill their players. If they get stuck in some locations, there isn't a way of getting unstuck. This is partially the map makers' responsibility, but an option to respawn at your base would be useful.</p>
+				<p>There are several recommendations for the multi-arena setup. Multi-arena barely works. The flags don't spawn, and the players don't always get teleported to the right location.</p>
+				<p>As far as the quality of life recommendations, some fun features to implement would be to allow for more than just 2 teams, red and blue.</p>
+				<p>Ideally, the admin could implement as many teams as there are colors for the blocks of wool (which represent the flags).</p>
+				<h4><strong>Code Review</strong></h4>
+				<p>For this review, we split up the code into manageable ~200-250 line amounts and assigned everyone in the team a section to do. Luckily, most of the files were sitting around 200 to 250 lines, so we could assign individual files to most of the people in our group. As for some of the smaller files, we only chose to review files that are necessary for the program to run well, and that had errors that popped up during our bug testing.</p>
+				<p>After the review, We went over the code and look at it closely to find code smells as well as faults in the code, and report about the problem we have identified and a fix we can implement to resolve the fault or code smell.</p>
+				<p><strong>Classes that reviewed:</strong> commandsMain.java, main.java, playerRespawn.java, PlayerAttack.java, playerPickupItem.java, classes.java, vote.java, playerInteraction.java</p>
+				<p>For <strong>commandMain.java</strong>;<br /> We discovered several code smells and a couple of code faults.</p>
+				<p>We decided that this function should be split up into multiple smaller functions to improve readability and functionality.</p>
+				<p>The file also did not contain many comments which would also help improve readability.</p>
+				<p>We also found incomplete functions that still needed to be finished, leftover code from testing the plugin, and poor handling of player food and health values leading to the game creating a cheat for Minecraft.</p>
+				<p>In <strong>PlayerRespawn.java</strong>, there were a few instances of code smells, but no faults. In code there were, needless else statements that contained no code. Couple of variable names that could use more descriptive names. And there were, duplicate code where a few lines of code were repeated changing nothing but the color of the team. Also, the entire file was inside one greater function and finally there was a lack of comments to help the reader/developer figure out what is going on in the file.</p>
+				<p>In <strong>Main.java</strong> and <strong>PlayerAttack.java</strong> there is nothing that stood out enough to warrant changing the code, as they are well-documented enough to understand, and short enough that changing things would likely make the file harder to read or more convoluted.</p>
+				<p>In playerPickupItem.java the biggest code smell is that the code contains a lot of long methods. We improved by splitting up the code in multiple functions. Which improved the readability and now it is easier to work with in the future.</p>
+				<p>The second smell is that there is a lot of duplicate code. There were multiple if-else statements that use the same code.</p>
+				<p>The code can also use some more error handling because not all issues are addressed. A small issue is that the code contained dead code, which we fixed easily by deleting the lines.</p>
+				<p>In <strong>Classes.java</strong> and <strong>PlayerInteractions.java</strong> the biggest code smell is that the code contains multiple lines of dead code. We improved the code by deleting the lines of code.</p>
+				<p>Also, <strong>PlayerInteractions.java</strong> and <strong>Vote.java</strong> contained duplicate code. We improved by deleting the lines of code.</p>
+				<p>Finally, we decided that a great improvement to the code will be by adding more comments, which will make the code better readable.</p>
+				<p>Some of the code faults were more severe, such as how edge cases were handled.</p>
+				<p>Poor error handling is another code fault. There aren't many if/else checks on input, so the player could enter different arguments, extra arguments, etc. and they would likely not see any errors or it would lead to unexpected behavior.</p>
+				<p>&nbsp;</p>
+				<h4><strong>Automated Testing</strong></h4>
+				<p>For the automated testing assignment, we were unable to use our previous project, instead, we found a new project that was easier to test. The capture the flag project proved too difficult to test since it was way too hard to access the variables from inside the game which is extremely variable given that they belong to an actual user. The new project is a battleship game, that is mainly written in java. The game is a player versus a very simple Artificial Intelligence, where both will place 4 different kinds of ships. Each ship contains a captain's quarters, which if double hit will sink the ship directly. Ships can not be placed on top of one another unless it is a special ship. The game is won once all ships are sunk by either the player or the AI.</p>
+				<p><strong><u>Test1:</u></strong> TestSquareExplicitHit - The purpose of this test is to make sure that if there are two squares, and square 1 is hit, square 2 is not hit. It is a very simple test to make sure the hit function only targets that square.</p>
+				<p><img src="images/test1.png" alt="test1" style="display: block; margin-left: auto; margin-right: auto; max-width: 90%;"/></p>
+				<p><strong><u>Test 2:</u></strong> testSquareIsInBounds - This test initializes every square in the playable gameboard and makes sure that the isOutOfBounds function returns the correct output.</p>
+				<p><img src="images/test2.png" alt="test2" style="display: block; margin-left: auto; margin-right: auto; max-width: 90%;"/></p>
+				<p><strong><u>Test 3:</u></strong> testSquareLocationIsAccurate - This test initializes every square in the playable area and validates the input from getRow and get column functions to make sure they are returning the correct location of the square.</p>
+				<p><img src="images/test3.png" alt="test3" style="display: block; margin-left: auto; margin-right: auto; max-width: 80%;"/></p>
+				<p>The test plan for this project is to mostly test functionality and error-checking. The project came with many thorough tests already implemented, so we worked around those. We used <strong>IntelliJ</strong> to test the previously written tests as well as compiling our own. The aim of our coverage wasn&rsquo;t very high, since there were already many automated tests created. Our added test, which was written to test the board, the squares on the board, the results, and the ships, improved the code and method coverage.</p>
+				<p>For example <strong>testPlaceDestroyerHorizontaly</strong> tested when a ship was placed on the board, that the ship occupied the correct squares, which was checked by comparing the expected squares with the actual squares. Another test was <strong>testHit</strong>, which tested if a square that was occupied by a ship got hit, the status of that square of the ship got changed to hit.</p>
+			</article>
+		</div>
+		<!-- Footer -->
+		<!-- start copyright -->
+		<footer id="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<p class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">
+						Copyright &copy; Onur Sasmaz</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end copyright -->
+	</body>
+</html>
